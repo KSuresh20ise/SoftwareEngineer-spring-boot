@@ -1,11 +1,11 @@
 # Software Engineer Management API
 
-A Spring Boot RESTful web service that manages software engineer records with MySQL database integration. It supports CRUD operations and ensures email uniqueness for each software engineer.
+A Spring Boot RESTful web service that manages software engineer records with MySQL database integration. It supports CRUD operations and ensures  unique ID for each software engineer.
 
 ## 🚀 Technologies Used
 
 - Java 17+
-- Spring Boot 3.x
+- Spring Boot 
 - Spring Data JPA
 - MySQL
 - Maven
@@ -25,4 +25,4 @@ A Spring Boot RESTful web service that manages software engineer records with My
 
 ```bash
 git clone https://github.com/KSuresh20ise/SoftwareEngineer-spring-boot.git
-cd software-engineer-api
+cd SoftwareEngineer-spring-boo
