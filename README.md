@@ -24,5 +24,5 @@ A Spring Boot RESTful web service that manages software engineer records with My
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/software-engineer-api.git
+git clone https://github.com/KSuresh20ise/SoftwareEngineer-spring-boot.git
 cd software-engineer-api
