@@ -1,0 +1,30 @@
+### Getting all engineers
+GET http://localhost:8080/software-engineers
+###
+
+### Create SoftwareEngineers
+POST http://localhost:8080/software-engineers
+Content-Type: application/json
+
+{
+  "name": "Suresh",
+  "techStack": "Java,spring boot",
+  "email": "suresh@gmail.com"
+}
+
+###
+
+### Update SoftwareEngineers
+PUT http://localhost:8080/software-engineers/1
+Content-Type: application/json
+
+{
+  "name": "Test123",
+  "techStack": "Java,spring boot",
+  "email": "test123@gmail.com"
+}
+###
+
+### Delete Create SoftwareEngineers
+DELETE http://localhost:8080/software-engineers/1
+###
