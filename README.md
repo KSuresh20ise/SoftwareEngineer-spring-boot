@@ -25,4 +25,4 @@ A Spring Boot RESTful web service that manages software engineer records with My
 
 ```bash
 git clone https://github.com/KSuresh20ise/SoftwareEngineer-spring-boot.git
-cd SoftwareEngineer-spring-boo
+cd SoftwareEngineer-spring-boot
