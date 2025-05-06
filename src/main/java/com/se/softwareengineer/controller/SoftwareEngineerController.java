@@ -6,7 +6,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -19,22 +18,22 @@ public class SoftwareEngineerController {
     }
 
     @GetMapping
-    public ResponseEntity<List<SoftwareEngineer>> getSoftwareEngineers() {
+    public ResponseEntity<List<SoftwareEngineer>> getEngineers() {
        List<SoftwareEngineer> softwareEngineers = softwareEngineerService.getAll();
         return new ResponseEntity<>(softwareEngineers, HttpStatus.OK);
     }
     @PostMapping
-    public ResponseEntity<SoftwareEngineer> addSoftwareEngineers(@RequestBody SoftwareEngineer softwareEngineer) {
+    public ResponseEntity<SoftwareEngineer> addEngineers(@RequestBody SoftwareEngineer softwareEngineer) {
          softwareEngineerService.insert(softwareEngineer);
         return new ResponseEntity<>(softwareEngineer, HttpStatus.CREATED);
     }
     @PutMapping("/{id}")
-    public ResponseEntity<SoftwareEngineer> getById(@PathVariable Integer id, @RequestBody SoftwareEngineer softwareEngineer) {
+    public ResponseEntity<SoftwareEngineer> updateEngineers(@PathVariable Integer id, @RequestBody SoftwareEngineer softwareEngineer) {
         softwareEngineerService.update(id,softwareEngineer);
         return new ResponseEntity<>(softwareEngineer, HttpStatus.OK);
     }
     @DeleteMapping("/{id}")
-    public ResponseEntity<String> deleteById(@PathVariable Integer id) {
+    public ResponseEntity<String> deleteEngineers(@PathVariable Integer id) {
         softwareEngineerService.delete(id);
         return new ResponseEntity<>("Deleted", HttpStatus.OK);
     }

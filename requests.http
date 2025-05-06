@@ -2,7 +2,7 @@
 GET http://localhost:8080/software-engineers
 ###
 
-### Create SoftwareEngineers
+### Create Engineers
 POST http://localhost:8080/software-engineers
 Content-Type: application/json
 
@@ -14,8 +14,8 @@ Content-Type: application/json
 
 ###
 
-### Update SoftwareEngineers
-PUT http://localhost:8080/software-engineers/1
+### Update Engineer
+PUT http://localhost:8080/software-engineers/52
 Content-Type: application/json
 
 {
@@ -25,6 +25,6 @@ Content-Type: application/json
 }
 ###
 
-### Delete Create SoftwareEngineers
-DELETE http://localhost:8080/software-engineers/1
+### Delete Engineers
+DELETE http://localhost:8080/software-engineers/52
 ###
